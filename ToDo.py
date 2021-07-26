@@ -8,7 +8,6 @@ class ToDo:
         self.tasks = []
         self.file = listFile
         self.fillList()
-        self.run()
 
     def fillList(self) -> None:
         if os.path.isfile(self.file):
