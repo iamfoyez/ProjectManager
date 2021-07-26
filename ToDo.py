@@ -35,6 +35,8 @@ class ToDo:
 
     def percentageCompleted(self) -> float:
         total = len(self.tasks)
+        if total is 0:
+            return 0
         completed = 0
         for task in self.tasks:
             if task["completed"]:
